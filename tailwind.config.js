@@ -107,6 +107,26 @@ module.exports = {
           transform: `matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)`,
         },
       },
+      'show-inners': {
+        '0% ': {
+          right: '16px',
+          opacity: 0,
+        },
+        '100%': {
+          right: '28px',
+          opacity: 1,
+        },
+      },
+      'unShow-inners': {
+        '0% ': {
+          right: '28px',
+          opacity: 1,
+        },
+        '100%': {
+          right: '16px',
+          opacity: 0,
+        },
+      },
     },
     animation: {
       'animation-part-10': 'animation-part-10 1s ease-in-out forwards',
@@ -120,6 +140,8 @@ module.exports = {
       'animation-title-1': 'animation-title-1 1s ease-in-out forwards',
       'animation-title-2': 'animation-title-2 1s ease-in-out forwards',
       'animation-title-3': 'animation-title-3 1s ease-in-out forwards',
+      'show-inner': 'show-inners 0.5s ease-in-out forwards',
+      'unShow-inner': 'unShow-inners 0.5s ease-in-out forwards',
     },
     extend: {
       colors: {
